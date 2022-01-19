@@ -1,3 +1,34 @@
+# todo-management-tool
+
+The aim of this project is to explore the functionality of Furo: https://furo.pro.
+
+It was created following the approach described in the e-book: [eBook.pdf](./eBook.pdf) [eBook.epub](./eBook.epub).
+
+Please note: The last commit to the upstream project https://github.com/theNorstroem/todo-management-tool broke the web client. Therefore I have created this demo branch off the last working commit of the main branch.
+
+Please note: The commands for starting the gRPC back-end and the gRPC Gateway did not work for me. Please use the following commands:
+
+```
+cd grpc-backend
+go run ./cmd/tmt-grpc/grpcserver.go
+```
+
+```
+cd api
+GW_SERVER_ADDRESS=localhost:8481 GRPC_SERVER_ADDRESS=localhost:7070 go run ./dist/grpc-gateway/cmd/cmd.go
+```
+
+As described in the e-book, this project includes Furo muspecs for a simple to-do list application (/api/muspecs), generated long-format specs (/api/specs), generated protobuf type and gRPC service specs (/api/dist/protos), a generated Swagger file for a REST version of the service (/api/dist/openapi/all-services.swagger.json), a Go server application (/grpc-backend) including generated Go service stubs (/api/dist/pb), a Go package for gRPC-Gateway (/api/dist/grpc-gateway) and a Furo Web-based web application (/client) including the generated env.js file (/client/src/configs) with the generated Furo JavaScript types and services.
+
+Run the back-end application and the gRPC Gateway with the commands given above, and the web application with the following commands:
+
+```
+npm i
+npm run start
+```
+
+This will automatically open the web app in the configured standard browser.
+
 # Creating an enterprise-flavoured ToDo application from scratch with the Furo Web Stack
 
 - _eBook_: [eBook.pdf](./eBook.pdf) [eBook.epub](./eBook.epub)
