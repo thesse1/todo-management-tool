@@ -23,6 +23,7 @@ As described in the e-book, this project includes Furo muspecs for a simple to-d
 Run the back-end application and the gRPC Gateway with the commands given above, and the web application with the following commands:
 
 ```
+cd client
 npm i
 npm run start
 ```
