@@ -4,7 +4,7 @@ The aim of this project is to explore the functionality of Furo: https://furo.pr
 
 It was created following the approach described in the e-book: [eBook.pdf](./eBook.pdf) [eBook.epub](./eBook.epub).
 
-Please note: The last commit to the upstream project https://github.com/theNorstroem/todo-management-tool broke the web client. Therefore I have created this demo branch off the last working commit of the main branch.
+Please note: The last commit to the upstream project https://github.com/theNorstroem/todo-management-tool broke the web client. Therefore I have created this demo branch off the last working commit in the main branch.
 
 Please note: The commands for starting the gRPC back-end and the gRPC Gateway did not work for me. Please use the following commands:
 
