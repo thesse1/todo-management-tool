@@ -48,7 +48,7 @@ class ViewListingTodos extends FBP(LitElement) {
     // language=HTML
     return html`
       <furo-vertical-flex>
-        <ui5-shellbar primary-title="ToDo Management Tool"> </ui5-shellbar>
+        <ui5-shellbar primary-title="ToDo Management Tool Demo"> </ui5-shellbar>
         <todo-listing-panel
           flex
           ƒ-focus="--pageActivated"
@@ -69,7 +69,7 @@ class ViewListingTodos extends FBP(LitElement) {
       <furo-app-flow event="todo-item-selected" ƒ-emit="--queryParams"></furo-app-flow>
 
       <furo-document-title
-        prefix="Todo Management Tool"
+        prefix="ToDo Management Tool Demo"
         title=" : List items"
         ƒ-set-waypoint="--pageActivated"
       ></furo-document-title>

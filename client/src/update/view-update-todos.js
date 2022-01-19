@@ -71,7 +71,7 @@ class ViewUpdateTodos extends FBP(LitElement) {
       <furo-vertical-flex>
         <!-- The ui5-shellbar is meant to serve as an application header and includes numerous built-in features,
         such as: logo, profile image/icon, title, search field, notifications and so on.-->
-        <ui5-shellbar primary-title="ToDo Management Tool">
+        <ui5-shellbar primary-title="ToDo Management Tool Demo">
           <ui5-shellbar-item
             id="search"
             icon="search"
@@ -148,7 +148,7 @@ class ViewUpdateTodos extends FBP(LitElement) {
 
       <!-- Display a nice browser tab title and sets a navigation waypoint -->
       <furo-document-title
-        prefix="Todo Management Tool"
+        prefix="ToDo Management Tool Demo"
         title=" : Add new item"
         ƒ-set-waypoint="--pageActivated, --pageHashChanged"
       ></furo-document-title>
